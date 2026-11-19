@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chai वडा by Vaishu | Kulhad Chai, Vada Pav &amp; Gappa</title>
+  <meta name="description" content="Chai वडा by Vaishu — an open-air chai café beside green fields in Pune. Kadak kulhad chai, vada pav, bun maska, misal and bhel.">
+  <meta property="og:title" content="Chai वडा by Vaishu">
+  <meta property="og:description" content="थोडं खा. थोडं प्या. मनमोकळ्या गप्पा मारा… बाकी टेन्शन आमच्या हवाली.">
+  <meta property="og:image" content="images/logo.jpg">
+  <meta name="theme-color" content="#2b1a10">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="Chai वडा by Vaishu — home">
+        <img src="images/logo.jpg" alt="" class="brand__logo" width="46" height="46">
+        <span class="brand__text">Chai <span class="deva">वडा</span><small>by Vaishu</small></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#visit" data-i18n="nav.visit">Visit</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language / भाषा बदला">
+          <span data-lang="en">EN</span><span data-lang="mr">मराठी</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Open-air chai café · Pune</p>
+          <h1 class="hero__title">Chai <span class="deva">वडा</span></h1>
+          <p class="hero__by"><span></span>by Vaishu<span></span></p>
+          <p class="hero__quote deva">थोडं खा. थोडं प्या.<br>मनमोकळ्या गप्पा मारा…<br><em>बाकी टेन्शन आमच्या हवाली.</em></p>
+          <p class="hero__sub" data-i18n="hero.sub">Kulhad chai, hot vada pav and evenings beside green fields — come hungry, leave happy.</p>
+          <div class="hero__ctas">
+            <a href="#menu" class="btn btn--primary" data-i18n="cta.menu">See the Menu</a>
+            <a href="#" class="btn btn--ghost js-directions" target="_blank" rel="noopener" data-i18n="cta.directions">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="hero__art">
+          <div class="badge-wrap">
+            <svg class="ring" viewBox="0 0 500 500" aria-hidden="true">
+              <defs><path id="ringPath" d="M250,250 m-228,0 a228,228 0 1,1 456,0 a228,228 0 1,1 -456,0"/></defs>
+              <text><textPath href="#ringPath" startOffset="0">कडक चहा ✦ VADA PAV ✦ BUN MASKA ✦ गप्पा ✦ KULHAD CHAI ✦ मिसळ ✦ FRESH EVERY CUP ✦</textPath></text>
+            </svg>
+            <div class="badge">
+              <img src="images/logo.jpg" alt="Chai वडा by Vaishu — Vaishu with kulhad chai, vada pav and bun maska" width="1080" height="1080">
+            </div>
+            <span class="floating-tag t1" data-i18n="tag.fresh">☕ Fresh every cup</span>
+            <span class="floating-tag t2 deva">कडक!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Kulhad Chai</span><i>✦</i><span class="deva">वडा पाव</span><i>✦</i><span>Bun Maska</span><i>✦</i><span class="deva">मिसळ</span><i>✦</i><span>Bhel</span><i>✦</i><span class="deva">कांदा भजी</span><i>✦</i><span>Cutting Chai</span><i>✦</i><span class="deva">गप्पा</span><i>✦</i>
+        <span>Kulhad Chai</span><i>✦</i><span class="deva">वडा पाव</span><i>✦</i><span>Bun Maska</span><i>✦</i><span class="deva">मिसळ</span><i>✦</i><span>Bhel</span><i>✦</i><span class="deva">कांदा भजी</span><i>✦</i><span>Cutting Chai</span><i>✦</i><span class="deva">गप्पा</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__collage reveal">
+          <figure class="ph ph--main"><img src="images/seating-fields.png" alt="Open-air seating beside green fields" loading="lazy"></figure>
+          <figure class="ph ph--small"><img src="images/hut-counter.png" alt="Straw-roof chai counter with festive bunting" loading="lazy"></figure>
+          <span class="sticker deva">चहा + वडा<br>= ❤️</span>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">Our story</p>
+          <h2 data-i18n="about.title">Chai, vada pav &amp; green fields</h2>
+          <p data-i18n="about.p1">Chai वडा by Vaishu is an open-air café sitting right beside lush green fields — a place to slow down with a hot kulhad of chai and a spicy vada pav.</p>
+          <p data-i18n="about.p2">A straw-roof chai hut, festive bunting, string lights and hills on the horizon. It's where friends gather in the evening, families unwind on weekends, and travellers stop for &ldquo;just one cutting&rdquo;.</p>
+          <ul class="badges">
+            <li><span>🫖</span><b data-i18n="badge.1">Brewed fresh</b></li>
+            <li><span>🌾</span><b data-i18n="badge.2">Field-side seating</b></li>
+            <li><span>💛</span><b data-i18n="badge.3">Pocket friendly</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-i18n="menu.eyebrow">What we serve</p>
+          <h2 data-i18n="menu.title">Our Menu</h2>
+          <p class="muted" data-i18n="menu.note">Sample menu — items &amp; prices may vary</p>
+        </div>
+        <div class="menu__layout">
+          <figure class="menu__feature reveal">
+            <img src="images/chai-bun.png" alt="Chai with cheese bun maska" loading="lazy">
+            <figcaption>
+              <b data-i18n="menu.featT">The evening classic</b>
+              <span data-i18n="menu.featD">Hot chai + buttery bun maska</span>
+            </figcaption>
+          </figure>
+          <div class="menu__panel reveal">
+            <div class="tabs" role="tablist" id="menuTabs"></div>
+            <div class="menu__list" id="menuGrid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section why">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-i18n="why.eyebrow">Why people keep coming back</p>
+          <h2 data-i18n="why.title">The Chai वडा vibe</h2>
+        </div>
+        <div class="why__grid">
+          <article class="why__card reveal"><span class="why__icon">🌾</span><h3 data-i18n="why.1t">Seats by the fields</h3><p data-i18n="why.1d">Open-air seating with green fields and hills all around.</p></article>
+          <article class="why__card reveal"><span class="why__icon">🔥</span><h3 data-i18n="why.2t">Fresh every cup</h3><p data-i18n="why.2d">Every chai is boiled fresh — never reheated.</p></article>
+          <article class="why__card reveal"><span class="why__icon">🍔</span><h3 data-i18n="why.3t">Vada pav worth the drive</h3><p data-i18n="why.3d">Crispy, hot and spicy — the other half of our name.</p></article>
+          <article class="why__card reveal"><span class="why__icon">✨</span><h3 data-i18n="why.4t">Evenings under lights</h3><p data-i18n="why.4d">String lights, festive flags and a glowing sign after sunset.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">From our café</p>
+          <h2 data-i18n="gallery.title">Moments at Chai वडा</h2>
+        </div>
+        <div class="gallery__grid" id="galleryGrid"></div>
+        <div class="center reveal">
+          <a class="btn btn--insta" href="https://www.instagram.com/chaiwada_by_vaishu/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3.1 0-4.1.1-1.1 0-1.8.2-2.5.5-.7.3-1.2.6-1.8 1.2S2.8 4.9 2.6 5.6c-.3.7-.4 1.4-.5 2.5C2 9 2 9.4 2 12s0 3 .1 4c0 1.1.2 1.8.5 2.5.3.7.6 1.2 1.2 1.8s1.1.9 1.8 1.2c.7.3 1.4.4 2.5.5 1 .1 1.4.1 4 .1s3 0 4-.1c1.1 0 1.8-.2 2.5-.5.7-.3 1.2-.6 1.8-1.2s.9-1.1 1.2-1.8c.3-.7.4-1.4.5-2.5.1-1 .1-1.4.1-4s0-3-.1-4c0-1.1-.2-1.8-.5-2.5-.3-.7-.6-1.2-1.2-1.8S19.1 2.8 18.4 2.6c-.7-.3-1.4-.4-2.5-.5C15 2 14.6 2 12 2zm0 1.8c2.6 0 2.9 0 4 .1 1 0 1.5.2 1.9.3.5.2.8.4 1.1.7.3.3.6.7.7 1.1.1.4.3.9.3 1.9.1 1 .1 1.3.1 4s0 2.9-.1 4c0 1-.2 1.5-.3 1.9-.2.5-.4.8-.7 1.1-.3.3-.7.6-1.1.7-.4.1-.9.3-1.9.3-1 .1-1.3.1-4 .1s-2.9 0-4-.1c-1 0-1.5-.2-1.9-.3-.5-.2-.8-.4-1.1-.7-.3-.3-.6-.7-.7-1.1-.1-.4-.3-.9-.3-1.9-.1-1-.1-1.3-.1-4s0-2.9.1-4c0-1 .2-1.5.3-1.9.2-.5.4-.8.7-1.1.3-.3.7-.6 1.1-.7.4-.1.9-.3 1.9-.3 1-.1 1.4-.1 4-.1z"/></svg>
+            <span data-i18n="gallery.follow">Follow @chaiwada_by_vaishu</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section visit" id="visit">
+      <div class="container visit__inner">
+        <div class="visit__info reveal">
+          <p class="eyebrow" data-i18n="visit.eyebrow">Drop by anytime</p>
+          <h2 data-i18n="visit.title">Come, have a chai with us</h2>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon">📍</span>
+              <div><b data-i18n="visit.addrL">Address</b><p data-i18n="visit.addr">Chai वडा by Vaishu, Pune, Maharashtra</p></div>
+            </li>
+            <li>
+              <span class="info-icon">🕒</span>
+              <div><b data-i18n="visit.hoursL">Timings</b><p data-i18n="visit.hours">Open daily · 6:30 AM – 10:30 PM</p></div>
+            </li>
+            <li>
+              <span class="info-icon">📞</span>
+              <div><b data-i18n="visit.phoneL">Phone</b><p><a href="#" class="js-tel js-phone-text">+91 98765 43210</a></p></div>
+            </li>
+          </ul>
+          <div class="hero__ctas">
+            <a href="#" class="btn btn--primary js-directions" target="_blank" rel="noopener" data-i18n="cta.directions">Get Directions</a>
+            <a href="#" class="btn btn--ghost-dark js-whatsapp" target="_blank" rel="noopener" data-i18n="cta.whatsapp">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="visit__media reveal">
+          <div class="visit__map">
+            <iframe title="Chai वडा by Vaishu on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=18.5993154,74.0082295&z=16&output=embed"></iframe>
+          </div>
+          <figure class="visit__photo"><img src="images/entrance.png" alt="Chai वडा entrance gate" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal">
+        <p class="deva cta-band__title">एक कटिंग होऊन जाऊ दे!</p>
+        <p class="cta-band__sub" data-i18n="cta.band">Your table by the fields is waiting.</p>
+        <a href="#" class="btn btn--dark js-directions" target="_blank" rel="noopener" data-i18n="cta.directions">Get Directions</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="brand">
+        <img src="images/logo.jpg" alt="" class="brand__logo" width="46" height="46" loading="lazy">
+        <span class="brand__text">Chai <span class="deva">वडा</span><small>by Vaishu</small></span>
+      </a>
+      <nav class="footer__links">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="https://www.instagram.com/chaiwada_by_vaishu/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer__copy"><span data-i18n="footer.made">Made with love &amp; lots of chai</span> · © <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky action bar -->
+  <div class="action-bar">
+    <a href="#" class="js-tel"><span>📞</span><b data-i18n="bar.call">Call</b></a>
+    <a href="#" class="js-whatsapp" target="_blank" rel="noopener"><span>💬</span><b>WhatsApp</b></a>
+    <a href="#" class="js-directions" target="_blank" rel="noopener"><span>📍</span><b data-i18n="bar.dir">Directions</b></a>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img alt="">
+    <p class="lightbox__cap"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

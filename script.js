@@ -240,8 +240,13 @@ lb.addEventListener("click", e => {
 document.addEventListener("keydown", e => { if (e.key === "Escape") lb.classList.remove("open"); });
 
 /* ---------- Nav ---------- */
-const nav = $("#nav"), burger = $("#burger"), links = $("#navLinks");
-const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 40);
+const nav = $("#nav"), burger = $("#burger"), links = $("#navLinks"), dock = $(".dock");
+const DOCK_AFTER = 220; // px scrolled before the Call / Directions / WhatsApp dock appears
+const onScroll = () => {
+  const y = window.scrollY;
+  nav.classList.toggle("scrolled", y > 40);
+  dock.classList.toggle("dock--show", y > DOCK_AFTER);
+};
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
